@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="?attr/cardBackgroundColor"
+    android:layout_marginBottom="4dp"
+    android:gravity="center_vertical">
+
+    <!-- Posición -->
+    <TextView
+        android:id="@+id/tv_posicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1."
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="?attr/textColorPrimary"
+        android:gravity="center"
+        android:layout_marginEnd="8dp"
+        android:minWidth="32dp" />
+
+    <!-- Nombre del jugador (editable) -->
+    <EditText
+        android:id="@+id/et_nombre_jugador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text=""
+        android:hint="Nombre del jugador"
+        android:textSize="14sp"
+        android:textColor="?attr/textColorPrimary"
+        android:background="@drawable/bg_edit_text"
+        android:padding="8dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="textPersonName"
+        android:maxLines="1" />
+
+    <!-- Goles (editable) -->
+    <EditText
+        android:id="@+id/et_goles_jugador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="0"
+        android:hint="0"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="?attr/textColorPrimary"
+        android:background="@drawable/bg_edit_text"
+        android:padding="8dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:gravity="center" />
+
+    <!-- Botón eliminar -->
+    <Button
+        android:id="@+id/btn_eliminar_goleador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="×"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:background="@drawable/bg_button_danger"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="4dp" />
+
+</LinearLayout> 

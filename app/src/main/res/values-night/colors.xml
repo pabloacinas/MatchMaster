@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Specific Colors - Dark Mode -->
+    <color name="primary_color">#FF4CAF50</color>
+    <color name="primary_variant">#FF2E7D32</color>
+    <color name="secondary_color">#FFFFB74D</color>
+    <color name="secondary_variant">#FFFF8F00</color>
+    
+    <!-- Background Colors -->
+    <color name="background_primary">#FF121212</color>
+    <color name="background_secondary">#FF1E1E1E</color>
+    <color name="surface_color">#FF1E1E1E</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFB3B3B3</color>
+    <color name="text_on_primary">#FF000000</color>
+    <color name="text_on_secondary">#FF000000</color>
+    
+    <!-- Card and Component Colors -->
+    <color name="card_background">#FF2C2C2C</color>
+    <color name="divider_color">#FF424242</color>
+    <color name="border_color">#FF616161</color>
+    
+    <!-- Button Colors -->
+    <color name="button_primary">#FF4CAF50</color>
+    <color name="button_secondary">#FFFFB74D</color>
+    <color name="button_danger">#FFEF5350</color>
+    
+    <!-- Status Colors -->
+    <color name="success_color">#FF66BB6A</color>
+    <color name="warning_color">#FFFFB74D</color>
+    <color name="error_color">#FFEF5350</color>
+    <color name="info_color">#FF42A5F5</color>
+</resources> 

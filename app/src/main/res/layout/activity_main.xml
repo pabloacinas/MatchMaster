@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="?attr/backgroundPrimary">
+
+        <!-- Sección de Ligas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mis Ligas"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="?attr/textColorPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Mensaje cuando no hay ligas -->
+        <TextView
+            android:id="@+id/tv_ligas_vacio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No hay ligas creadas"
+            android:textSize="16sp"
+            android:textColor="?attr/textColorSecondary"
+            android:gravity="center"
+            android:padding="32dp"
+            android:visibility="gone" />
+
+        <!-- RecyclerView para ligas -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_ligas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone" />
+
+        <!-- Botón para crear liga -->
+        <Button
+            android:id="@+id/btn_crear_liga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear Nueva Liga"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_button_primary"
+            android:textColor="@android:color/white" />
+
+        <!-- Separador -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/dividerColor"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Sección de Torneos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mis Torneos"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="?attr/textColorPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Mensaje cuando no hay torneos -->
+        <TextView
+            android:id="@+id/tv_torneos_vacio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No hay torneos creados"
+            android:textSize="16sp"
+            android:textColor="?attr/textColorSecondary"
+            android:gravity="center"
+            android:padding="32dp"
+            android:visibility="gone" />
+
+        <!-- RecyclerView para torneos -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_torneos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone" />
+
+        <!-- Botón para crear torneo -->
+        <Button
+            android:id="@+id/btn_crear_torneo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear Nuevo Torneo"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/bg_button_secondary"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView> 

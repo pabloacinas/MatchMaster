@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="?attr/backgroundPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear Nueva Liga"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="?attr/textColorPrimary"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Información de la Liga -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Información de la Liga"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/textColorPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_nombre_liga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la Liga"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_edit_text" />
+
+        <EditText
+            android:id="@+id/et_num_equipos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Equipos (4-20, par)"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_edit_text" />
+
+        <!-- Información de Usuarios -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Información de Usuarios"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/textColorPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_nombre_usuario1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Usuario 1"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_edit_text" />
+
+        <EditText
+            android:id="@+id/et_nombre_usuario2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Usuario 2"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_edit_text" />
+
+        <!-- Formato de la Liga -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formato de la Liga"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/textColorPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_formato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rb_ida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solo Ida"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rb_ida_vuelta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ida y Vuelta"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+        </RadioGroup>
+
+        <!-- Botón Siguiente -->
+        <Button
+            android:id="@+id/btn_siguiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siguiente: Agregar Equipos"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/bg_button_primary"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView> 
