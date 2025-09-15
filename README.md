@@ -43,13 +43,6 @@ MatchMaster es una aplicación Android desarrollada en Java para gestionar ligas
 2. Sincronizar las dependencias de Gradle
 3. Ejecutar la aplicación en un emulador o dispositivo físico
 
-## Próximas Funcionalidades
-- Creación de ligas con equipos y jugadores
-- Gestión de torneos con diferentes formatos
-- Sistema de puntuación y clasificación
-- Historial de partidos
-- Estadísticas de jugadores y equipos
-
 ## Versión
 - Versión actual: 1.0
 - SDK mínimo: 24 (Android 7.0)
